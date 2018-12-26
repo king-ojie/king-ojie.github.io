@@ -107,3 +107,11 @@ h2:after {
 input {
 float: 
 }
+
+form {
+    margin-top: 40px;
+    width: 50%;
+    background-color: rgba(204, 46, 46, 0.38);
+    display: inline-block;
+    box-shadow: 5px, 10px, 18px, #888888
+}

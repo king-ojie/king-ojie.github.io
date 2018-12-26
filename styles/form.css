@@ -28,3 +28,82 @@ $rhythm: 25px;
         }
     }
 }
+
+
+.rem {
+    visibility: hidden;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #print * {
+    visibility: visible;
+  }
+  #print{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.pbut {
+    margin-left: 80px;
+}
+form {
+    margin-top: 40px;
+    width: 100%;
+    background-color: rgba(146, 183, 196, 0.89);
+    display: inline-block;
+    color:#000000;
+    
+}
+
+.formwrap {
+    display: block;
+    text-align: center;
+    box-shadow: 5px, 10px, 18px, #888888;
+    width: 100%;
+    margin-left: -200px;
+}
+
+.departure {
+    margin-left:;
+}
+
+input {
+    width: 60%;
+    padding:2px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(176, 245, 247, 0.52) 
+    
+}
+input[type=submit] {
+    width: 30%;
+    border-radius: 10px;
+    border: 1px solid #0027ff;
+    background-color: rgba(168, 233, 235, 0.37); 
+    transition: all 0.4s ease-in-out;
+    
+}
+input[type=submit]:hover {
+    width: 35%;
+    color: #f5fbfc;
+    border-radius: 10px;
+    border: 1px solid #0027ff;
+    background-color: rgba(183, 9, 9, 0.22); 
+    
+}
+input[type=text] {
+    width: 40%;
+    padding:2px;
+    border-radius: 3px;
+    border-color: red;
+    border-bottom: 2px solid #0027ff;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 60%;
+}
