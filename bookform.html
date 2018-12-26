@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="styles/custom.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel ="stylesheet" type="text/css" href="styles/book.css">
+    <link rel ="stylesheet" type="text/css" href="styles/book.css"><link rel ="stylesheet" type="text/css" href="styles/form.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
     
        
@@ -47,172 +47,59 @@
     </div>
     <!-- /.container -->
 </nav>
-<div class="row">
-        <div class ="col-md-12">
-        <div class="boilerform">
-    <form class="boilerform" action="" method="post">
-    <fieldset class="c-form">
-        <legend class="c-form__heading">Book a Ticket</legend>
-        <div class="c-form__row">
-            <label for="name" class="c-label">Name</label>
-            <input type="text" name="name" id="name" class="c-input-field" value="" autocorrect="off" required />
-        </div> <div class="c-form__row">
-            <label for="name" class="c-label">Travelling From</label>
-            <select name="cars" id ="locate">
-				<option value="" selected disabled hidden>Choose here</option>
-  <option value="lagosph">Lagos</option>
-  <option value="saab">Ibadan</option>
-  <option value="mercedes">Abuja</option>
-  <option value="audi">Benin</option>
-</select>
-        </div>
-		
-		<div class="c-form__row">
-            <label for="name" class="c-label">Travelling To:</label>
-            <select name="" id="destination">
-				<option value="" selected disabled hidden >Choose here </option>
-  <option value="lagosph">Lagos</option>
-  <option value="saab">Ibadan</option>
-  <option value="mercedes">Abuja</option>
-  <option value="audi">Beinn</option>
-</select>
-        </div>
-		<div class="c-form__row">
-            <label for="name" class="c-label">Departure Date</label>
-            <input type="date" name="date" id="date" class="departure" value="" autocorrect="off" required />
-        </div>
-        <div class="c-form__row">
-            <label for="email" class="c-label">Email</label>
-            <input type="email" name="email" id="email" autocapitalize="none" autocorrect="off" class="c-input-field" required />
-        </div>
-        <div class="c-form__row">
-            <label for="message" class="c-label">Your Message</label>
-            <textarea name="message" id="message" class="c-input-field c-input-field--multiline" rows="10"></textarea>
-        </div>
-        <div class="c-form__row">
-           <!-- <button class="c-button" type="submit">Submit</button> --> 
-        </div>
-        <button id="button" type ="button">Submit</button>
-    </fieldset>
-</form>
-</div> 
-        </div>
-    </div>
     <div class = "container">
-    <div class = "row"> <div class ="col-md-12">
-        
-    <div class="invoice-box">
-        <table cellpadding="0" cellspacing="0">
-            <tr class="top">
-                <td colspan="2">
-                    <table>
-                        <tr>
-                            <td class="title">
-                                <img src="img/logo1.ico" style="width:100%; max-width:300px;">
-                            </td>
-                            
-                            <td>
-                                Invoice #: 123<br>
-                                Created: January 1, 2015<br>
-                                Due: February 1, 2015
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            
-            <tr class="information">
-                <td colspan="2">
-                    <table>
-                        <tr>
-                            <td>
-                                Zari Transport Services <br>
-                                
-                            </td>
-                            
-                            <td>
-                                <span id="disp-name" ></span><br>
-                               <span id="disp-email" ></span>
-                            
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            
-            <tr class="heading">
-                <td>
-                    Find your Payment Details Below
-                </td>
-                
-                <td>
-                    Check #
-                </td>
-            </tr>
-            
-                  
-            
-        
-            
-            <tr class="item ">
-                <td>
-                    Destination
-                </td>
-                
-                <td >
-                <span id="disp-destination"></span>
-                </td>
-            </tr>
-            
-            <tr class="item">
-                <td>
-                Location</td>
-                
-                <td >
-                   <span id="disp-location"></span>
-                </td>
-            </tr>
-            <tr class="item">
-                <td>
-                Date</td>
-                
-                <td >
-                  <p><span id="disp-date"></span></p> 
-                </td>
-            </tr>
-        </table>
-    </div>
-
-        
-        
+        <div class = "col-md-12">
+        <div class = "row">
+            <div class="formwrap">
+    <form action="C:\Users\USR\Desktop\slack card/receipt.html" >
+  Name:<br>
+  <input id= "nam" type="text" name="firstname" value="">
+  <br>
+ Email:<br>
+  <input id = "email" type="text" name="lastname" value="">
+  <br><br>Where are you travelling from? :<br>
+  <select name="location" id ="locate">
+				<option value="" selected disabled hidden>Choose here</option>
+  <option value="">Lagos</option>
+  <option value="">Ibadan</option>
+  <option value="">Abuja</option>
+  <option value="">Benin</option>
+</select>
+  <br><br>Destination<br>
+  <select name="destination" id ="destination">
+				<option value="" selected disabled hidden>Choose here</option>
+  <option value="">Lagos</option>
+  <option value="">Ibadan</option>
+  <option value="">Abuja</option>
+  <option value="">Benin</option>
+</select>
+  <br><br>Date of Departure<br>
+  <input type="date" name="date" id="date" class="departure" value="" autocorrect="off" required />
+        <input required class="rem">
+  <br><br>
+  <input type="submit" value="Submit" onclick="setStorage() ">
+</form> </div>
+            </div>
+            </div>
         </div>
-        
-        </div>
-    </div>
-
-    
     
     <script>
-        function alertName(){
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var destination = document.getElementById("destination");
-        var realD= destination.options[destination.selectedIndex].text;
-        var dat = document.getElementById("date").value; 
-        var location = document.getElementById("locate");
-        var realL=  location.options[location.selectedIndex].text;  
-        document.getElementById("disp-name").innerHTML= name;
-        document.getElementById("disp-date").innerHTML= dat; 
-        document.getElementById("disp-location").innerHTML= realL;
-        document.getElementById("disp-destination").innerHTML= realD;
-        document.getElementById("disp-email").innerHTML= email;
-        
-}
-        
-        document.getElementById('button').addEventListener('click', alertName);
-            
-    </script>
-<script src="script/script.js" ></script> 
+ function setStorage() {
+if(typeof(Storage)!=="undefined") {
+        localStorage.setItem("name", document.getElementById("nam").value);
+    localStorage.setItem("email", document.getElementById("email").value);
+     var realD = document.getElementById("destination");
+    localStorage.setItem("destination", realD.options[realD.selectedIndex].text);
+    
+    var realL = document.getElementById("locate")
+    localStorage.setItem("locate", realL.options[realL.selectedIndex].text);
+    
+    localStorage.setItem("date", document.getElementById("date").value);
+		alert("Click Ok to print receipt");
+		location.href = "C:/Users/USR/Desktop/slackcard/receipt.html";
+		}}
+		</script>
+<!--<script src="script/script.js" ></script> -->
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>
