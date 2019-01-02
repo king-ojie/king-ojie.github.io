@@ -52,20 +52,38 @@ $rhythm: 25px;
     margin-left: 80px;
 }
 form {
-    margin-top: 40px;
-    width: 100%;
+    margin-top: 60px;
+    margin-left:200px; 
+    width: 50%;
     background-color: rgba(146, 183, 196, 0.89);
     display: inline-block;
     color:#000000;
     
 }
-
+@keyframes reveal {
+    0%  {
+        transform: scale(0.8);
+    }
+    
+     50%  {
+        transform: scale(1.2)
+    }
+    
+     100%  {
+        transform: scale(1)
+    }
+    
+    
+}
 .formwrap {
-    display: block;
+    
+    display: none;
     text-align: center;
     box-shadow: 5px, 10px, 18px, #888888;
-    width: 100%;
-    margin-left: -200px;
+    width: 200%;
+    margin-left: -400px;
+    animation: reveal 1s 1;
+    
 }
 
 .departure {
