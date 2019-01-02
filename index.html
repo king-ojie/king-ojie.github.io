@@ -52,16 +52,20 @@
     <header>
 <div class="container-fluid">
     <div class="row">
-        <div class ="col-md-8">
+        <div class ="col-sm-8">
         <div class="header-text">
    <h1>At <span style="color: #eb0909">Z</span>ari Transport we have redefined mobility; <br><p></p>with a touch of <span style="color: #efdb74">gold</span> and class! </h1>
             
+            
 </div> 
         </div>
-        <div class ="col-md-4">
-
-                <div class="formwrap">
-    <form action="C:\Users\USR\Desktop\slack card/receipt.html" >
+        
+        
+        <div class ="col-sm-4">
+            <button type="button" class="btn btn-primary" onclick="reveal()" > Book Now!
+            </button>
+            <div class="formwrap" id="form">
+    <form >
   Name:<br>
   <input id= "nam" type="text" name="firstname" value="">
   <br>
@@ -89,6 +93,15 @@
   <br><br>
   <input type="submit" value="Submit" onclick="setStorage() ">
         <script>
+            
+    function reveal(){
+        var item = document.getElementById("form"); 
+        if (item.style.display === "none") {
+            item.style.display = "block"}
+        else {
+            item.style.display = "block"
+        }
+        }        
         
  function setStorage() {
 if(typeof(Storage)!=="undefined") {
@@ -109,10 +122,14 @@ if(typeof(Storage)!=="undefined") {
                 
             
             </div>
+            
+        </div>
+
+              
      
     </div>
     </div>
-        
+
             
     
     <div class="row">
@@ -122,7 +139,6 @@ if(typeof(Storage)!=="undefined") {
             view More</button>
 </div>   --> 
         
-    </div>
     </div>
     </header>
     <section >
