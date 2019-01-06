@@ -52,20 +52,24 @@
     <header>
 <div class="container-fluid">
     <div class="row">
-        <div class ="col-sm-8">
+        <div class ="col-md-5 col-sm-">
         <div class="header-text">
-   <h1>At <span style="color: #eb0909">Z</span>ari Transport we have redefined mobility; <br><p></p>with a touch of <span style="color: #efdb74">gold</span> and class! </h1>
+   <h1 class="header-tex">At <span style="color: #eb0909">Z</span>ari Transport we have redefined mobility; <br><p></p>with a touch of <span style="color: #efdb74">gold</span> and class! </h1>
             
             
 </div> 
         </div>
         
         
-        <div class ="col-sm-4">
-            <button type="button" class="btn btn-primary" onclick="reveal()" > Book Now!
+        <div class ="col-md-2">
+            
+        </div>
+            <div class ="col-md-5">
+                <button type="button" class="btn btn-primary" onclick="reveal()" > Book Now!
             </button>
             <div class="formwrap" id="form">
-    <form >
+    <form class="" >
+        <div class ="felement">
   Name:<br>
   <input id= "nam" type="text" name="firstname" value="">
   <br>
@@ -92,6 +96,7 @@
         <input required class="rem">
   <br><br>
   <input type="submit" value="Submit" onclick="setStorage() ">
+            </div>
         <script>
             
     function reveal(){
@@ -119,6 +124,8 @@ if(typeof(Storage)!=="undefined") {
 		}}
 		</script>
 </form>
+        
+                
                 
             
             </div>
@@ -155,17 +162,17 @@ if(typeof(Storage)!=="undefined") {
         </div>
         <div class="container">
         <div class = "row">
-            <div class = col-sm-4> 
+            <div class = "col-sm-4"> 
                 <div class="about-img" id="">
                     <img class="img.fluid img-thumbnail img-fluid" src="img/air.jpg" alt="AirTransport">
                 </div>
             </div>
-            <div class = col-sm-4>
+            <div class = "col-md-4">
                 <div class="about-img" id="">
                     <img class="img.fluid img-thumbnail img-fluid" src="img/air.jpg" alt="AirTransport">
                 </div> 
             </div>
-            <div class = col-sm-4>
+            <div class = "col-md-4">
                 <div class="about-img" id="">
                     <img class="img.fluid img-thumbnail img-fluid" src="img/air.jpg" alt="AirTransport">
                 </div>
